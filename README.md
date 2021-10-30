@@ -1,37 +1,36 @@
 # Overview
 
-This repository contains an implementation of [John Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in order to illustrate [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development). Test-driven development is a software engineering principal where test cases are created based upon requirements prior to writing code. John Conway's Game of Life is a cellular autmaton devised upon 4 rules.
+This repository contains an implementation of [John Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in order to illustrate [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development). Test-driven development is a software engineering methodology where test cases are created based upon requirements *prior to writing code*. John Conway's Game of Life is a cellular autmaton devised upon 4 rules.
 * Any live cell with fewer than two live neighbours dies, as if by underpopulation.
 * Any live cell with two or three live neighbours lives on to the next generation.
 * Any live cell with more than three live neighbours dies, as if by overpopulation.
 * Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
-These 4 rules are well positioned for a test-driven development methodology, which typically involves the following process:
+These 4 rules create an environment condusive for adopting a test-driven development methodology. A test-drive development approach typically involves the following process:
 * Write a test before any code is written that passes iff the feature's specifications are met.
 * Execute the tests. (The tests should fail because the code has not been written yet.)
 * Write the code that causes the test  to pass.
 * Execute the tests and verify the test now passes.
 * Refactor and repeat.
 
-In my experience, simply adding unit tests can tremendously increase the robustness of the code, while also influencing the design so that the objects are better defined. In this example, I discovered several errors in my code  as I began exercising the classes and their respective methods. 
+In my experience, simply adding unit tests can tremendously increase the robustness of the code, while also influencing the design so that the objects are better defined. In this specific example, I discovered several errors in my code  as I began exercising the classes and their respective methods. 
 
-The incorporation of tests oftentimes makes developers more concise in their class definitions, as additioal code and functinoality requires the overhead of additional tests. Test-driven development should cause a myriad of questions to surface such as:
+The incorporation of tests from the beginning of design oftentimes makes developers more concise in their class definitions, as additional code and functinoality can require the overhead of additional tests. Test-driven development should cause a myriad of questions to surface such as:
 * Encapsulation and prefering protected or private. Additionally, how to test private methods (and whether they should be tested).
 * The adoption of an effective testing framework. In this case, I used [GoogleTest](https://github.com/google/googletest). 
-* Lastly, the extension of testing into concepts such as Mocking.
+* Lastly, the extension of a testing paradigm into other levels of testing as well as concepts such as Mocking.
 
-While most software organizations I've worked with involve some sort of guidance in the form of a [Software Design Description](https://en.wikipedia.org/wiki/Software_design_description), of equal importance is the [Test Plan]](https://en.wikipedia.org/wiki/Test_plan) which "documents the strategy that will be used to verify and ensure that a product or system meets its design specifications and other requirements." While test-driven devleopment typically refers to the unit test level, it's principal can be applied to all levels of testing as a product matures.
+While most software organizations I've worked with involve some sort of guidance in the form of a [Software Design Description](https://en.wikipedia.org/wiki/Software_design_description), of equal importance is the [Test Plan](https://en.wikipedia.org/wiki/Test_plan) which "documents the strategy that will be used to verify and ensure that a product or system meets its design specifications and other requirements." While test-driven devleopment typically refers to the unit test level, its principal can be applied to all levels of testing as a product matures.
 
 
 # Building:
-In order to build the executable, create a build directory (.e.g. build) that
-is where you will execute CMake from. The process below can be used to build the
+In order to build the executable, create a build directory (.e.g. build) where you will execute CMake from. The process below can be used to build the
 qtGameOfLife executable.
 * `git clone https://github.com/bruckart/qtGameOfLife`
 * `cd qtGameOfLife`
 * `mkdir build`
 * `cd build`
-* `cmake ../`
+* `cmake ../` (or cmake -DCMAKE_TESTING_ENABLED=1 ../)
 * `make`
 
 
