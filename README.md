@@ -17,12 +17,12 @@ These 4 rules create an environment condusive for adopting a test-driven develop
 
 In my experience, simply adding unit tests can tremendously increase the robustness of the code, while also influencing the design so that the objects are better defined. In this specific example, I discovered several errors in my code  as I began exercising the classes and their respective methods. 
 
-The incorporation of tests from the beginning of design oftentimes makes developers more concise in their class definitions, as additional code and functinoality can require the overhead of additional tests. Test-driven development should cause a myriad of questions to surface such as:
+The incorporation of tests from the beginning of design oftentimes makes developers more concise in their class definitions, as additional code and functionality can require the overhead of additional tests. Test-driven development should cause a myriad of questions to surface such as:
 * Encapsulation and prefering protected or private. Additionally, how to test private methods (and whether they should be tested).
 * The adoption of an effective testing framework. In this case, I used [GoogleTest](https://github.com/google/googletest). 
 * Lastly, the extension of a testing paradigm into other levels of testing as well as concepts such as Mocking.
 
-While most software organizations I've worked with involve some sort of guidance in the form of a [Software Design Description](https://en.wikipedia.org/wiki/Software_design_description), of equal importance is the [Test Plan](https://en.wikipedia.org/wiki/Test_plan) which "documents the strategy that will be used to verify and ensure that a product or system meets its design specifications and other requirements." While test-driven devleopment typically refers to the unit test level, its principal can be applied to all levels of testing as a product matures.
+While most software organizations I've worked with involve some sort of guidance in the form of a [Software Design Description](https://en.wikipedia.org/wiki/Software_design_description), *of at least equal importance* is the [Test Plan](https://en.wikipedia.org/wiki/Test_plan) which "documents the strategy that will be used to verify and ensure that a product or system meets its design specifications and other requirements." While test-driven devleopment typically refers to the unit test level, its principal can be applied to all levels of testing as a product matures.
 
 
 # Building:
