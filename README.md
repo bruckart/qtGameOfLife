@@ -13,6 +13,8 @@ These 4 rules create an environment condusive for adopting a test-driven develop
 * Execute the tests and verify the test now passes.
 * Refactor and repeat.
 
+![Game of Life](/assets/screenrecording.gif)
+
 In my experience, simply adding unit tests can tremendously increase the robustness of the code, while also influencing the design so that the objects are better defined. In this specific example, I discovered several errors in my code  as I began exercising the classes and their respective methods. 
 
 The incorporation of tests from the beginning of design oftentimes makes developers more concise in their class definitions, as additional code and functinoality can require the overhead of additional tests. Test-driven development should cause a myriad of questions to surface such as:
