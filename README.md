@@ -22,7 +22,7 @@ The incorporation of tests from the beginning of design oftentimes makes develop
 * The adoption of an effective testing framework. In this case, I used [GoogleTest](https://github.com/google/googletest). 
 * Lastly, the extension of a testing paradigm into other levels of testing as well as concepts such as Mocking.
 
-While most software organizations I've worked with involve some sort of guidance in the form of a [Software Design Description](https://en.wikipedia.org/wiki/Software_design_description), *of at least equal importance* is the [Test Plan](https://en.wikipedia.org/wiki/Test_plan) which "documents the strategy that will be used to verify and ensure that a product or system meets its design specifications and other requirements." While test-driven devleopment typically refers to the unit test level, its principal can be applied to all levels of testing as a product matures.
+While most software organizations I've worked with involve some sort of guidance in the form of a [Software Design Description](https://en.wikipedia.org/wiki/Software_design_description), *of (at least) equal importance* is the [Test Plan](https://en.wikipedia.org/wiki/Test_plan) which "documents the strategy that will be used to verify and ensure that a product or system meets its design specifications and other requirements." While test-driven devleopment typically refers to the unit test level, its principal can be applied to all levels of testing as a product matures.
 
 
 # Building:
